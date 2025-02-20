@@ -7,7 +7,7 @@ class Task {
     private $_status;
     private $_date_creation;
 
-    public function __construct($_title, $_description, $_status, $_date_creation, $_id = NULL){
+    public function __construct($_title, $_description, $_status, $_date_creation = NULL, $_id = NULL){
         $this->_title = $_title;
         $this->_description = $_description;
         $this->_status = $_status;
