@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter une tâche</title>
-    <link rel="stylesheet" href="../assets/css/add_task.css">
+    <link rel="stylesheet" href="../assets/css/tasks.css">
 </head>
 <body>
 
@@ -17,7 +17,8 @@
             <div class="ss">
                 <label for="title">Titre</label>
                 <input type="text" id="title" name="title" required>
-                <label for="description">Description</label>
+                <br><br>
+                <label for="description">Description</label><br>
                 <textarea id="description" name="description" rows="3" required></textarea>
             </div>
             <button type="submit">Créer votre tâche</button>
