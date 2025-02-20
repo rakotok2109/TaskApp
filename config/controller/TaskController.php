@@ -39,9 +39,11 @@ class TaskController {
                 $pdo->execSQL($sql, [$id_task]);
 
                 $_SESSION['success'] = "La tâche a été supprimé avec succès.";
+                header("Location: ../view/tasks.php");
                 exit();
             } catch (PDOException $e) {
                 $_SESSION['error'] = "Erreur lors de la suppression : " . $e->getMessage();
+                header("Location: ../view/tasks.php");
                 exit();
             }
         }
